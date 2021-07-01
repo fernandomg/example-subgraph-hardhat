@@ -4,7 +4,8 @@
   "description": "An example to help you get started with The Graph using Hardhat as the development environment.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codegen": "thegraph codegen"
   },
   "author": "",
   "license": "ISC",
