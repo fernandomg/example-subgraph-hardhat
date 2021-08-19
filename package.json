@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "hardhat run --network localhost scripts/deploy.js",
-    "create-gravatars": "hardhat create-gravatars --network localhost",
+    "hardhat:node": "hardhat node --hostname 0.0.0.0",
+    "hardhat:deploy": "hardhat run --network localhost scripts/deploy.js",
+    "hardhat:create-gravatars": "hardhat create-gravatars --network localhost",
     "codegen": "graph codegen",
-    "create-local": "graph create fernandomg/example-subgraph-hardhat --node http://127.0.0.1:8020",
-    "deploy-local": "graph deploy fernandomg/example-subgraph-hardhat --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "create": "graph create hardhat-example --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create hardhat-example --node http://127.0.0.1:8020",
+    "deploy": "graph deploy hardhat-example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-local": "graph deploy hardhat-example --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "keywords": [],
   "author": "",
