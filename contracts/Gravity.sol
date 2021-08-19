@@ -1,4 +1,5 @@
-pragma solidity ^0.7.0;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.0;
 
 contract GravatarRegistry {
   event NewGravatar(uint id, address owner, string displayName, string imageUrl);
